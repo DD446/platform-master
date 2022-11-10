@@ -1,0 +1,31 @@
+@mixin bg-options ( $size: contain, $repeat: no-repeat, $position: center ) {
+	background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+}
+
+@mixin text-options ( $color: #000000, $font-size: medium, $font-weight: normal, $line-height: normal, $margin-top: 1rem ) {
+	color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    margin-block: $margin-top;
+}
+
+@mixin breakpoint( $point: mobile, $max-width: 0 ) {
+  	@if $max-width != 0 {
+		@media (max-width: $max-width) {
+			@content;
+		}
+	}
+  	@else if $point == mobile {
+		@media (max-width: 575px) {
+			@content;
+		}
+	}
+	@else if $point == tablet {
+		@media (max-width: 1007px) {
+			@content;
+		}
+	}
+}

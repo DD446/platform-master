@@ -1,0 +1,45 @@
+<?php
+/**
+ * User: fabio
+ * Date: 19.10.21
+ * Time: 10:30
+ */
+return [
+    'header_index' => 'Podcast-Roulette von :name',
+    'subheader_index' => '',
+    'header_participant' => 'Deine Teilnahme-Daten',
+    'header_register' => 'Anmelden',
+    'header' => 'Deine Teilnahme am Podcast-Roulette',
+    'subheader' => 'Melde Dich hier für die nächste Runde unseres Podcast-Roulettes an.',
+    'help_email' => 'Trage hier die E-Mail-Adresse für die Roulette-Kommunikation ein.',
+    'help_podcasters' => 'Trage hier die Vor- und Zunamen der teilnehmenden Podcaster ein (ein Name pro Zeile).',
+    'label_podcasters' => 'Teilnehmende Podcaster/innen',
+    'option_choose_feed' => 'Podcast auswählen',
+    'help_feed' => 'Wähle den Podcast aus, der am Roulette teilnimmt.',
+    'label_feed' => 'Teilnehmender Podcast',
+    'button_register' => 'Zur Anmeldung',
+    'button_submit' => 'Beim Podcast-Roulette anmelden',
+    'button_delete' => 'Teilnahme absagen',
+    'label_first_time' => 'Erste Teilnahme am Podcast-Roulette',
+    'message_success' => 'Du hast Dich erfolgreich bei der kommenden Runde des Podcast-Roulettes angemeldet!',
+    'message_destroyed' => 'Du hast Dich erfolgreich wieder abgemeldet! Schade!',
+    'message_registration_closed' => 'Die Anmeldung für diese Runde des Podcast-Roulettes ist leider beendet. Du kannst aber gerne an einer der nächsten Runden teilnehmen!',
+    'page_title_index' => 'Podcast-Roulette',
+    'page_title_create' => 'Anmeldung Podcast-Roulette',
+    'header_upload' => 'Fertige Aufnahme hochladen',
+    'header_uploaded' => 'Fertige Aufnahme',
+    'text_uploaded' => 'Vielen Dank für den Upload. Wir haben eure Episode erhalten. Jut jemacht!',
+    'follow_us' => 'Folgt dem Podcast Roulette Podcast, um eure und alle weiteren Episoden zu hören.',
+    'label_description' => 'Beschreibung zur Episode (Shownotes)',
+    'label_recording' => 'Datei im MP3-Format',
+    'label_cover' => 'Episoden-Cover',
+    'button_upload' => 'Datei hochladen',
+    'placeholder_description' => 'Füge hier den Begleittext zur Episode ein',
+    'message_file_upload_failed' => 'Das Hochladen der Datei ist fehlgeschlagen. Bitte probiere es erneut.',
+    'message_file_upload_success' => 'Du hast die Episoden-Daten erfolgreich übermittelt.',
+    'header_partner' => 'Roulette-Partner',
+    'message_no_partner' => 'Dir/Euch wurde bisher noch kein Roulette-Partner zugelost. Du erhältst eine E-Mail, sobald das geschehen ist.',
+    'validation_description' => 'Beschreibung',
+    'validation_recording' => 'Datei',
+    'validation_cover' => 'Episoden-Cover',
+];

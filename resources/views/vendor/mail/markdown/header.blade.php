@@ -1,0 +1,1 @@
+[![{{ $slot }}]({{ asset('images1/podcaster_logo_260x90_trans.png') }})]({{ $url }})

@@ -1,0 +1,35 @@
+{
+    "count": 7,
+    "items": [
+        {
+            "id": "1600240053",
+            "name": "1400x1400.png",
+            "byte": 14644,
+            "created": "16.09.2020 09:07:33",
+            "size": "14.3 KB",
+            "last": "09:07:33 16.09.2020",
+            "cat": "_default_",
+            "url": "https://beispiel.podcaster.de/download/1400x1400.png",
+            "extension": "png",
+            "mimetype": "image/png",
+            "type": "image",
+            "created_date": "16.09.2020",
+            "created_time": "09:09"
+        },
+        {
+            "id": "1593720040",
+            "name": "3000x3000.png",
+            "byte": 93132,
+            "created": "02.07.2020 22:00:40",
+            "size": "90.95 KB",
+            "last": "22:00:40 02.07.2020",
+            "cat": "logos",
+            "url": "https://beispiel.podcaster.de/download/3000x3000.png",
+            "extension": "png",
+            "mimetype": "image/png",
+            "type": "image",
+            "created_date": "02.07.2020",
+            "created_time": "22:10"
+        }
+    ]
+}

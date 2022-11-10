@@ -1,0 +1,426 @@
+[
+    {
+        "value": "Arts",
+        "text": "Kunst"
+    },
+    {
+        "value": "Arts:Books",
+        "text": "Kunst: Bücher"
+    },
+    {
+        "value": "Arts:Design",
+        "text": "Kunst: Design"
+    },
+    {
+        "value": "Arts:Fashion &amp; Beauty",
+        "text": "Kunst: Mode und Schönheit"
+    },
+    {
+        "value": "Arts:Food",
+        "text": "Kunst: Essen"
+    },
+    {
+        "value": "Arts:Performing Arts",
+        "text": "Kunst: Darstellende Kunst"
+    },
+    {
+        "value": "Arts:Visual Arts",
+        "text": "Kunst: Visuelle Kunst"
+    },
+    {
+        "value": "Business",
+        "text": "Wirtschaft"
+    },
+    {
+        "value": "Business:Careers",
+        "text": "Wirtschaft: Karriere"
+    },
+    {
+        "value": "Business:Entrepreneurship",
+        "text": "Wirtschaft: Unternehmertum"
+    },
+    {
+        "value": "Business:Investing",
+        "text": "Wirtschaft: Investitionen"
+    },
+    {
+        "value": "Business:Management",
+        "text": "Wirtschaft: Management"
+    },
+    {
+        "value": "Business:Marketing",
+        "text": "Wirtschaft: Marketing"
+    },
+    {
+        "value": "Business:Non-Profit",
+        "text": "Wirtschaft: Gemeinnützig"
+    },
+    {
+        "value": "Comedy",
+        "text": "Comedy"
+    },
+    {
+        "value": "Comedy:Comedy Interviews",
+        "text": "Comedy: Comedy Interviews"
+    },
+    {
+        "value": "Comedy:Improv",
+        "text": "Comedy: Improvisation"
+    },
+    {
+        "value": "Comedy:Stand-Up",
+        "text": "Comedy: Stand-Up"
+    },
+    {
+        "value": "Education",
+        "text": "Bildung"
+    },
+    {
+        "value": "Education:Courses",
+        "text": "Bildung: Kurse"
+    },
+    {
+        "value": "Education:How To",
+        "text": "Bildung: HowTo"
+    },
+    {
+        "value": "Education:Language Learning",
+        "text": "Bildung: Sprachen lernen"
+    },
+    {
+        "value": "Education:Self-Improvement",
+        "text": "Bildung: Persönliche Weiterentwicklung"
+    },
+    {
+        "value": "Government",
+        "text": "Regierung und Organisationen"
+    },
+    {
+        "value": "Health &amp; Fitness",
+        "text": "Gesundheit und Fitness"
+    },
+    {
+        "value": "Health &amp; Fitness:Alternative Health",
+        "text": "Gesundheit und Fitness: Alternative Medizin"
+    },
+    {
+        "value": "Health &amp; Fitness:Fitness",
+        "text": "Gesundheit und Fitness: Fitness"
+    },
+    {
+        "value": "Health &amp; Fitness:Medicine",
+        "text": "Gesundheit und Fitness: Medizin"
+    },
+    {
+        "value": "Health &amp; Fitness:Mental Health",
+        "text": "Gesundheit und Fitness: Mentale Gesundheit"
+    },
+    {
+        "value": "Health &amp; Fitness:Nutrition",
+        "text": "Gesundheit und Fitness: Ernährung"
+    },
+    {
+        "value": "Health &amp; Fitness:Sexuality",
+        "text": "Gesundheit und Fitness: Sexualität"
+    },
+    {
+        "value": "History",
+        "text": "Geschichte"
+    },
+    {
+        "value": "Kids &amp; Family",
+        "text": "Kinder und Familie"
+    },
+    {
+        "value": "Kids &amp; Family:Education for Kids",
+        "text": "Kinder und Familie: Bildung für Kinder"
+    },
+    {
+        "value": "Kids &amp; Family:Parenting",
+        "text": "Kinder und Familie: Erziehung"
+    },
+    {
+        "value": "Kids &amp; Family:Pets &amp; Animals",
+        "text": "Kinder und Familie: Haustiere und Tiere"
+    },
+    {
+        "value": "Kids &amp; Family:Stories for Kids",
+        "text": "Kinder und Familie: Geschichten für Kinder"
+    },
+    {
+        "value": "Leisure",
+        "text": "Freizeit"
+    },
+    {
+        "value": "Leisure:Animation &amp; Manga",
+        "text": "Freizeit: Animation und Manga"
+    },
+    {
+        "value": "Leisure:Automotive",
+        "text": "Freizeit: Automobil"
+    },
+    {
+        "value": "Leisure:Aviation",
+        "text": "Freizeit: Flugsport"
+    },
+    {
+        "value": "Leisure:Crafts",
+        "text": "Freizeit: Handwerk"
+    },
+    {
+        "value": "Leisure:Games",
+        "text": "Freizeit: Spiele"
+    },
+    {
+        "value": "Leisure:Hobbies",
+        "text": "Freizeit: Hobby"
+    },
+    {
+        "value": "Leisure:Home &amp; Garden",
+        "text": "Freizeit: Heim und Garten"
+    },
+    {
+        "value": "Leisure:Video Games",
+        "text": "Freizeit: Videospiele"
+    },
+    {
+        "value": "Music",
+        "text": "Musik"
+    },
+    {
+        "value": "Music:Music Commentary",
+        "text": "Musik: Musik-Kritiken"
+    },
+    {
+        "value": "Music:Music History",
+        "text": "Musik: Musik-Geschichte"
+    },
+    {
+        "value": "Music:Music Interviews",
+        "text": "Musik: Musik-Interviews"
+    },
+    {
+        "value": "News",
+        "text": "Nachrichten"
+    },
+    {
+        "value": "News:Business News",
+        "text": "Nachrichten: Wirtschaftsnachrichten"
+    },
+    {
+        "value": "News:Daily News",
+        "text": "Nachrichten: Tagesaktuell"
+    },
+    {
+        "value": "News:Entertainment News",
+        "text": "Nachrichten: Unterhaltung"
+    },
+    {
+        "value": "News:News Commentary",
+        "text": "Nachrichten: Kommentare"
+    },
+    {
+        "value": "News:Politics",
+        "text": "Nachrichten: Politik"
+    },
+    {
+        "value": "News:Sports News",
+        "text": "Nachrichten: Sportnachrichten"
+    },
+    {
+        "value": "News:Tech News",
+        "text": "Nachrichten: Technologie"
+    },
+    {
+        "value": "Religion &amp; Spirituality",
+        "text": "Religion und Spiritualität"
+    },
+    {
+        "value": "Religion &amp; Spirituality:Buddhism",
+        "text": "Religion und Spiritualität: Buddismus"
+    },
+    {
+        "value": "Religion &amp; Spirituality:Christianity",
+        "text": "Religion und Spiritualität: Christentum"
+    },
+    {
+        "value": "Religion &amp; Spirituality:Hinduism",
+        "text": "Religion und Spiritualität: Hinduismus"
+    },
+    {
+        "value": "Religion &amp; Spirituality:Islam",
+        "text": "Religion und Spiritualität: Islam"
+    },
+    {
+        "value": "Religion &amp; Spirituality:Judaism",
+        "text": "Religion und Spiritualität: Judentum"
+    },
+    {
+        "value": "Religion &amp; Spirituality:Religion",
+        "text": "Religion und Spiritualität: Religion"
+    },
+    {
+        "value": "Religion &amp; Spirituality:Spirituality",
+        "text": "Religion und Spiritualität: Spiritualität"
+    },
+    {
+        "value": "Science",
+        "text": "Wissenschaft"
+    },
+    {
+        "value": "Science:Astronomy",
+        "text": "Wissenschaft: Astronomie"
+    },
+    {
+        "value": "Science:Chemistry",
+        "text": "Wissenschaft: Chemie"
+    },
+    {
+        "value": "Science:Earth Sciences",
+        "text": "Wissenschaft: Geowissenschaften"
+    },
+    {
+        "value": "Science:Life Sciences",
+        "text": "Wissenschaft: Umweltwissenschaften"
+    },
+    {
+        "value": "Science:Mathematics",
+        "text": "Wissenschaft: Mathematik"
+    },
+    {
+        "value": "Science:Natural Sciences",
+        "text": "Wissenschaft: Naturwissenschaften"
+    },
+    {
+        "value": "Science:Nature",
+        "text": "Wissenschaft: Natur"
+    },
+    {
+        "value": "Science:Physics",
+        "text": "Wissenschaft: Physik"
+    },
+    {
+        "value": "Science:Social Sciences",
+        "text": "Wissenschaft: Sozialwissenschaften"
+    },
+    {
+        "value": "Society &amp; Culture",
+        "text": "Gesellschaft und Kultur"
+    },
+    {
+        "value": "Society &amp; Culture:Documentary",
+        "text": "Gesellschaft und Kultur: Dokumentation"
+    },
+    {
+        "value": "Society &amp; Culture:Personal Journals",
+        "text": "Gesellschaft und Kultur: Lebensgeschichten"
+    },
+    {
+        "value": "Society &amp; Culture:Philosophy",
+        "text": "Gesellschaft und Kultur: Philosophie"
+    },
+    {
+        "value": "Society &amp; Culture:Places &amp; Travel",
+        "text": "Gesellschaft und Kultur: Orte und Reisen"
+    },
+    {
+        "value": "Society &amp; Culture:Relationships",
+        "text": "Gesellschaft und Kultur: Beziehungen"
+    },
+    {
+        "value": "Sports",
+        "text": "Sport"
+    },
+    {
+        "value": "Sports:Baseball",
+        "text": "Sport: Baseball"
+    },
+    {
+        "value": "Sports:Basketball",
+        "text": "Sport: Basketball"
+    },
+    {
+        "value": "Sports:Cricket",
+        "text": "Sport: Cricket"
+    },
+    {
+        "value": "Sports:Fantasy Sports",
+        "text": "Sport: Fantasy Sports"
+    },
+    {
+        "value": "Sports:Football",
+        "text": "Sport: American Football"
+    },
+    {
+        "value": "Sports:Golf",
+        "text": "Sport: Golf"
+    },
+    {
+        "value": "Sports:Hockey",
+        "text": "Sport: Hockey"
+    },
+    {
+        "value": "Sports:Rugby",
+        "text": "Sport: Rugby"
+    },
+    {
+        "value": "Sports:Running",
+        "text": "Sport: Laufen"
+    },
+    {
+        "value": "Sports:Soccer",
+        "text": "Sport: Fußball"
+    },
+    {
+        "value": "Sports:Swimming",
+        "text": "Sport: Schwimmen"
+    },
+    {
+        "value": "Sports:Tennis",
+        "text": "Sport: Tennis"
+    },
+    {
+        "value": "Sports:Volleyball",
+        "text": "Sport: Volleyball"
+    },
+    {
+        "value": "Sports:Wilderness",
+        "text": "Sport: Outdoor"
+    },
+    {
+        "value": "Sports:Wrestling",
+        "text": "Sport: Wrestling"
+    },
+    {
+        "value": "Technology",
+        "text": "Technologie"
+    },
+    {
+        "value": "True Crime",
+        "text": "True Crime"
+    },
+    {
+        "value": "TV &amp; Film",
+        "text": "TV und Film"
+    },
+    {
+        "value": "TV &amp; Film:After Shows",
+        "text": "TV und Film: After Shows"
+    },
+    {
+        "value": "TV &amp; Film:Film History",
+        "text": "TV und Film: Filmgeschichte"
+    },
+    {
+        "value": "TV &amp; Film:Film Interviews",
+        "text": "TV und Film: Film Interviews"
+    },
+    {
+        "value": "TV &amp; Film:Film Reviews",
+        "text": "TV und Film: Film Besprechungen"
+    },
+    {
+        "value": "TV &amp; Film:TV Reviews",
+        "text": "TV und Film: TV Besprechungen"
+    }
+]

@@ -1,0 +1,10 @@
+// Variables
+$socicon-fonts-src: '~socicon-sass/dist/fonts';
+@import '~socicon-sass';
+@import '~font-awesome';
+
+@import "theme";
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+@import '~bootstrap-vue/src/icons.scss';
+@import "mixins";
+@import "defaults";

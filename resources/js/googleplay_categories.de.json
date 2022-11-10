@@ -1,0 +1,66 @@
+[
+    {
+        "value": "Arts",
+        "text": "Kunst"
+    },
+    {
+        "value": "Business",
+        "text": "Wirtschaft"
+    },
+    {
+        "value": "Comedy",
+        "text": "Comedy"
+    },
+    {
+        "value": "Education",
+        "text": "Bildung"
+    },
+    {
+        "value": "Games &amp; Hobbies",
+        "text": "Spiele und Hobbys"
+    },
+    {
+        "value": "Government &amp; Organizations",
+        "text": "Regierung und Organisationen"
+    },
+    {
+        "value": "Health",
+        "text": "Gesundheit"
+    },
+    {
+        "value": "Kids &amp; Family",
+        "text": "Kinder und Familie"
+    },
+    {
+        "value": "Music",
+        "text": "Musik"
+    },
+    {
+        "value": "News &amp; Politics",
+        "text": "Nachrichten und Politik"
+    },
+    {
+        "value": "Religion &amp; Spirituality",
+        "text": "Religion und Spiritualität"
+    },
+    {
+        "value": "Science &amp; Medicine",
+        "text": "Wissenschaft und Medizin"
+    },
+    {
+        "value": "Society &amp; Culture",
+        "text": "Gesellschaft und Kultur"
+    },
+    {
+        "value": "Sports &amp; Recreation",
+        "text": "Sport und Erholung"
+    },
+    {
+        "value": "TV &amp; Film",
+        "text": "Fernsehen und Film"
+    },
+    {
+        "value": "Technology",
+        "text": "Technologie"
+    }
+]

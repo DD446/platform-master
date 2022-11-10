@@ -1,0 +1,86 @@
+{
+    "data": [
+        {
+            "type": "show",
+            "id": "pod-5ea2082c6bc37297937508",
+            "feed_id": "Der_Podcast",
+            "links": {
+                "self": "https://api.podcaster.sattoaster/api/shows/pod-5ea2082c6bc37297937508?feedId=Der_Podcast",
+                "web": "https://beispiel.podcaster.de/der_podcast/beispiel-013/",
+                "logo": "",
+                "media": ""
+            },
+            "attributes": {
+                "title": "Beispiel #013",
+                "description": "Dies ist eine Beispiel-Episode für den Podcast-Hostingservice podcaster.de",
+                "author": "beispiel@kundendomain.me (Fabio Bacigalupo)",
+                "link": "https://beispiel.podcaster.de/der_podcast/beispiel-013/",
+                "copyright": "podcaster.de",
+                "logo": "",
+                "guid": "pod-5ea2082c6bc37297937508",
+                "publish_date": "1587677228",
+                "publish_date_formatted": "23.04.2020, 23:27 Uhr",
+                "is_published": "0",
+                "file": "",
+                "enclosure_url": "",
+                "itunes": {
+                    "title": "Nur als Entwurf",
+                    "subtitle": "",
+                    "logo": "1587677200",
+                    "summary": "",
+                    "episodeType": "full",
+                    "author": "Fabio Bacigalupo",
+                    "duration": "00:05:08",
+                    "season": "",
+                    "episode": ""
+                },
+                "type": "unknown",
+                "duration_formatted": "5m 8s"
+            },
+            "relationships": [
+                "entry"
+            ]
+        },
+        {
+            "type": "show",
+            "id": "pod-5cc21955598f7405476263",
+            "feed_id": "Der_Podcast",
+            "links": {
+                "self": "https://api.podcaster.sattoaster/api/shows/pod-5cc21955598f7405476263?feedId=Der_Podcast",
+                "web": "https://beispiel.podcaster.de/der_podcast/beispiel-folge-xyz-011/",
+                "logo": "",
+                "media": ""
+            },
+            "attributes": {
+                "title": "#012 Beispiel-Folge",
+                "description": "<div>Dies ist eine Beispiel-Episode für den Podcast-Hostingservice podcaster.de <br></div><div></div>\n\nIn der Folge wird erklärt, was ein Podcast ist.",
+                "author": "beispiel@kundendomain.me (Fabio Bacigalupo)",
+                "link": "https://beispiel.podcaster.de/der_podcast/beispiel-folge-xyz-011/",
+                "copyright": "podcaster.de",
+                "logo": "",
+                "guid": "pod-5cc21955598f7405476263",
+                "publish_date": "1557908895",
+                "publish_date_formatted": "15.05.2019, 10:28 Uhr",
+                "is_published": 1,
+                "file": "",
+                "enclosure_url": "",
+                "itunes": {
+                    "title": "Beispiel-Folge xyz",
+                    "subtitle": "xyz sagt alles",
+                    "logo": "1555322159",
+                    "summary": "",
+                    "episodeType": "full",
+                    "author": "Fabio Bacigalupo",
+                    "duration": "00:05:08",
+                    "season": "1",
+                    "episode": "10"
+                },
+                "type": "unknown",
+                "duration_formatted": "5m 8s"
+            },
+            "relationships": [
+                "entry"
+            ]
+        }
+    ]
+}

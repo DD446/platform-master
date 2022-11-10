@@ -1,0 +1,27 @@
+{
+    "data": {
+        "type": "show",
+        "id": "pod-5ea2082c6bc37297937508",
+        "feed_id": "Der_Podcast",
+        "attributes": {
+            "title": "Beispiel #013",
+            "subtitle": "",
+            "link": "https://beispiel.podcaster.de/der_podcast/beispiel-013/",
+            "description": "Dies ist eine Beispiel-Episode für den Podcast-Hostingservice podcaster.de",
+            "author": "beispiel@kundendomain.me (Fabio Bacigalupo)",
+            "email": "",
+            "copyright": "podcaster.de",
+            "itunes": {
+                "title": "Nur als Entwurf",
+                "subtitle": "",
+                "logo": "1587677200",
+                "summary": "",
+                "episodeType": "full",
+                "author": "Fabio Bacigalupo",
+                "duration": "00:05:08",
+                "season": "",
+                "episode": ""
+            }
+        }
+    }
+}

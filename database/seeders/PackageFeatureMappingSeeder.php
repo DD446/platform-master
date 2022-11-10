@@ -1,0 +1,142 @@
+<?php
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class PackageFeatureMappingSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('package_feature_mapping')->delete();
+
+        $package_feature_mapping = [
+            ['package_feature_mapping_id' => '1','package_feature_id' => '1','package_id' => '1','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '2','package_feature_id' => '2','package_id' => '1','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '3','package_feature_id' => '5','package_id' => '1','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '4','package_feature_id' => '3','package_id' => '1','units' => '52428800','status' => '1'],
+            ['package_feature_mapping_id' => '5','package_feature_id' => '4','package_id' => '1','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '6','package_feature_id' => '1','package_id' => '2','units' => '3','status' => '1'],
+            ['package_feature_mapping_id' => '7','package_feature_id' => '2','package_id' => '2','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '8','package_feature_id' => '17','package_id' => '3','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '9','package_feature_id' => '1','package_id' => '3','units' => '5','status' => '1'],
+            ['package_feature_mapping_id' => '10','package_feature_id' => '2','package_id' => '3','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '11','package_feature_id' => '3','package_id' => '2','units' => '262144000','status' => '1'],
+            ['package_feature_mapping_id' => '12','package_feature_id' => '3','package_id' => '3','units' => '524288000','status' => '1'],
+            ['package_feature_mapping_id' => '13','package_feature_id' => '4','package_id' => '3','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '14','package_feature_id' => '4','package_id' => '2','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '15','package_feature_id' => '5','package_id' => '2','units' => '2','status' => '1'],
+            ['package_feature_mapping_id' => '16','package_feature_id' => '5','package_id' => '3','units' => '3','status' => '1'],
+            ['package_feature_mapping_id' => '17','package_feature_id' => '5','package_id' => '4','units' => '4','status' => '1'],
+            ['package_feature_mapping_id' => '18','package_feature_id' => '3','package_id' => '4','units' => '2147483648','status' => '1'],
+            ['package_feature_mapping_id' => '19','package_feature_id' => '1','package_id' => '4','units' => '5','status' => '1'],
+            ['package_feature_mapping_id' => '20','package_feature_id' => '11','package_id' => '1','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '21','package_feature_id' => '11','package_id' => '2','units' => '3','status' => '1'],
+            ['package_feature_mapping_id' => '22','package_feature_id' => '11','package_id' => '3','units' => '5','status' => '1'],
+            ['package_feature_mapping_id' => '23','package_feature_id' => '11','package_id' => '4','units' => '5','status' => '1'],
+            ['package_feature_mapping_id' => '25','package_feature_id' => '12','package_id' => '3','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '26','package_feature_id' => '12','package_id' => '4','units' => '3','status' => '1'],
+            ['package_feature_mapping_id' => '27','package_feature_id' => '13','package_id' => '4','units' => '5','status' => '1'],
+            ['package_feature_mapping_id' => '28','package_feature_id' => '14','package_id' => '4','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '31','package_feature_id' => '17','package_id' => '4','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '32','package_feature_id' => '13','package_id' => '3','units' => '5','status' => '1'],
+            ['package_feature_mapping_id' => '33','package_feature_id' => '13','package_id' => '2','units' => '3','status' => '1'],
+            ['package_feature_mapping_id' => '34','package_feature_id' => '18','package_id' => '2','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '35','package_feature_id' => '18','package_id' => '3','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '36','package_feature_id' => '18','package_id' => '4','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '37','package_feature_id' => '19','package_id' => '4','units' => '2048','status' => '0'],
+            ['package_feature_mapping_id' => '38','package_feature_id' => '8','package_id' => '3','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '39','package_feature_id' => '8','package_id' => '4','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '40','package_feature_id' => '1','package_id' => '5','units' => '3','status' => '1'],
+            ['package_feature_mapping_id' => '41','package_feature_id' => '2','package_id' => '5','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '42','package_feature_id' => '3','package_id' => '5','units' => '524288000','status' => '1'],
+            ['package_feature_mapping_id' => '43','package_feature_id' => '4','package_id' => '5','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '44','package_feature_id' => '5','package_id' => '5','units' => '4','status' => '1'],
+            ['package_feature_mapping_id' => '45','package_feature_id' => '11','package_id' => '5','units' => '3','status' => '1'],
+            ['package_feature_mapping_id' => '46','package_feature_id' => '18','package_id' => '5','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '47','package_feature_id' => '17','package_id' => '5','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '48','package_feature_id' => '13','package_id' => '5','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '49','package_feature_id' => '8','package_id' => '6','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '50','package_feature_id' => '18','package_id' => '6','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '51','package_feature_id' => '19','package_id' => '6','units' => '4096','status' => '1'],
+            ['package_feature_mapping_id' => '52','package_feature_id' => '9','package_id' => '6','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '53','package_feature_id' => '11','package_id' => '6','units' => '10','status' => '1'],
+            ['package_feature_mapping_id' => '54','package_feature_id' => '12','package_id' => '6','units' => '10','status' => '1'],
+            ['package_feature_mapping_id' => '55','package_feature_id' => '1','package_id' => '6','units' => '10','status' => '1'],
+            ['package_feature_mapping_id' => '56','package_feature_id' => '2','package_id' => '6','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '57','package_feature_id' => '16','package_id' => '6','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '58','package_feature_id' => '17','package_id' => '6','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '59','package_feature_id' => '5','package_id' => '6','units' => '5','status' => '1'],
+            ['package_feature_mapping_id' => '60','package_feature_id' => '3','package_id' => '6','units' => '10737418240','status' => '1'],
+            ['package_feature_mapping_id' => '61','package_feature_id' => '4','package_id' => '6','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '62','package_feature_id' => '13','package_id' => '6','units' => '10','status' => '1'],
+            ['package_feature_mapping_id' => '63','package_feature_id' => '14','package_id' => '6','units' => '5','status' => '1'],
+            ['package_feature_mapping_id' => '64','package_feature_id' => '15','package_id' => '6','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '65','package_feature_id' => '8','package_id' => '7','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '66','package_feature_id' => '18','package_id' => '7','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '67','package_feature_id' => '19','package_id' => '7','units' => '4096','status' => '1'],
+            ['package_feature_mapping_id' => '68','package_feature_id' => '9','package_id' => '7','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '69','package_feature_id' => '11','package_id' => '7','units' => '100','status' => '1'],
+            ['package_feature_mapping_id' => '70','package_feature_id' => '12','package_id' => '7','units' => '100','status' => '1'],
+            ['package_feature_mapping_id' => '71','package_feature_id' => '1','package_id' => '7','units' => '500','status' => '1'],
+            ['package_feature_mapping_id' => '72','package_feature_id' => '2','package_id' => '7','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '73','package_feature_id' => '16','package_id' => '7','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '74','package_feature_id' => '17','package_id' => '7','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '75','package_feature_id' => '5','package_id' => '7','units' => '5','status' => '1'],
+            ['package_feature_mapping_id' => '76','package_feature_id' => '3','package_id' => '7','units' => '26843545600','status' => '1'],
+            ['package_feature_mapping_id' => '77','package_feature_id' => '4','package_id' => '7','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '78','package_feature_id' => '13','package_id' => '7','units' => '250','status' => '1'],
+            ['package_feature_mapping_id' => '79','package_feature_id' => '14','package_id' => '7','units' => '25','status' => '1'],
+            ['package_feature_mapping_id' => '80','package_feature_id' => '15','package_id' => '7','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '81','package_feature_id' => '20','package_id' => '6','units' => '5','status' => '1'],
+            ['package_feature_mapping_id' => '82','package_feature_id' => '20','package_id' => '7','units' => '25','status' => '1'],
+            ['package_feature_mapping_id' => '83','package_feature_id' => '21','package_id' => '6','units' => '15','status' => '1'],
+            ['package_feature_mapping_id' => '84','package_feature_id' => '21','package_id' => '7','units' => '60','status' => '1'],
+            ['package_feature_mapping_id' => '85','package_feature_id' => '16','package_id' => '3','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '86','package_feature_id' => '16','package_id' => '4','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '87','package_feature_id' => '16','package_id' => '5','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '88','package_feature_id' => '22','package_id' => '6','units' => '50','status' => '1'],
+            ['package_feature_mapping_id' => '89','package_feature_id' => '22','package_id' => '7','units' => '250','status' => '1'],
+            ['package_feature_mapping_id' => '90','package_feature_id' => '17','package_id' => '2','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '91','package_feature_id' => '23','package_id' => '2','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '92','package_feature_id' => '23','package_id' => '3','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '93','package_feature_id' => '23','package_id' => '4','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '94','package_feature_id' => '23','package_id' => '5','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '95','package_feature_id' => '23','package_id' => '6','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '96','package_feature_id' => '23','package_id' => '7','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '97','package_feature_id' => '24','package_id' => '3','units' => '20','status' => '1'],
+            ['package_feature_mapping_id' => '98','package_feature_id' => '24','package_id' => '4','units' => '50','status' => '1'],
+            ['package_feature_mapping_id' => '99','package_feature_id' => '24','package_id' => '5','units' => '250','status' => '1'],
+            ['package_feature_mapping_id' => '100','package_feature_id' => '24','package_id' => '6','units' => '250','status' => '1'],
+            ['package_feature_mapping_id' => '101','package_feature_id' => '24','package_id' => '7','units' => '2500','status' => '1'],
+            ['package_feature_mapping_id' => '102','package_feature_id' => '25','package_id' => '3','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '103','package_feature_id' => '25','package_id' => '4','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '104','package_feature_id' => '25','package_id' => '6','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '105','package_feature_id' => '25','package_id' => '7','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '106','package_feature_id' => '28','package_id' => '3','units' => '1','status' => '1'],
+            ['package_feature_mapping_id' => '107','package_feature_id' => '28','package_id' => '4','units' => '3','status' => '1'],
+            ['package_feature_mapping_id' => '108','package_feature_id' => '28','package_id' => '6','units' => '10','status' => '1'],
+            ['package_feature_mapping_id' => '109','package_feature_id' => '28','package_id' => '7','units' => '50','status' => '1'],
+            ['package_feature_mapping_id' => '110','package_feature_id' => '26','package_id' => '4','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '111','package_feature_id' => '26','package_id' => '6','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '112','package_feature_id' => '26','package_id' => '7','units' => '0','status' => '1'],
+            ['package_feature_mapping_id' => '113','package_feature_id' => '20','package_id' => '5','units' => '5','status' => '1'],
+            ['package_feature_mapping_id' => '114','package_feature_id' => '28','package_id' => '5','units' => '5','status' => '1']
+        ];
+
+        foreach ($package_feature_mapping as $mapping) {
+            DB::table('package_feature_mapping')->insert([
+                'package_feature_mapping_id' => $mapping['package_feature_mapping_id'],
+                'package_feature_id' => $mapping['package_feature_id'],
+                'package_id' => $mapping['package_id'],
+                'units' => $mapping['units'],
+                'status' => $mapping['status'],
+            ]);
+        }
+    }
+}

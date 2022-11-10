@@ -1,0 +1,106 @@
+.default-text {
+    h1 {
+        margin-top: 45px;
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    h2, h3, h4, h5, h6 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    &.main-content {
+        h2 {
+            @include text-options( #707070, 2rem, 500, 24px);
+            @include breakpoint( $max-width: 575px ) {
+                @include text-options( #707070, 20px, 500, 24px);
+            }
+        }
+        h3 {
+            @include text-options( #707070, 1.75rem, 500, 24px);
+            @include breakpoint( $max-width: 575px ) {
+                @include text-options( #707070, 20px, 500, 24px);
+            }
+        }
+        h4 {
+            @include text-options( #707070, 1.5rem, 500, 24px);
+            @include breakpoint( $max-width: 575px ) {
+                @include text-options( #707070, 1rem, 500, 24px);
+            }
+        }
+        h5 {
+            @include text-options( #707070, 1.25rem, 500, 24px);
+            @include breakpoint( $max-width: 575px ) {
+                @include text-options( #707070, 1rem, 500, 24px);
+            }
+        }
+        h6 {
+            @include text-options( #707070, 1rem, 500, 24px);
+            @include breakpoint( $max-width: 575px ) {
+                @include text-options( #707070, 1rem, 500, 24px);
+            }
+        }
+    }
+    img, video {
+        max-width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    blockquote {
+        margin-top: 3rem;
+        border-radius: 5px;
+        background: #F7F7F7;
+        :before {
+            color: #ccc;
+            content: '“';
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 0.25em;
+            vertical-align: -0.4em;
+        }
+        p {
+            background-color: #EFEFEF;
+            border-radius: 5px 0 0 5px;
+            padding: 50px;
+        }
+        +p {
+            text-align: end;
+        }
+    }
+
+    p > mark {
+        padding: 1rem;
+        background-color: $mark-bg;
+        line-height: 3.5em;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    .inarticle-image {
+        display: inline-block;
+        margin: auto; /* adjust as needed */
+        img {
+            margin: auto;
+        }
+        figcaption {
+            font-size: smaller;
+            font-style: italic;
+            text-align: right;
+        }
+    }
+
+}
+
+.default-text {
+    @include text-options( #707070, 16px, 400, 24px);
+    p, .text, ul, ol, cite {
+        @include text-options( #707070, 16px, 400, 24px);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &.main-content {
+        p, .text {
+            @include text-options( #707070, 16px, 400, 24px);
+        }
+    }
+}
