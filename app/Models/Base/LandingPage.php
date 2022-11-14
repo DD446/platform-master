@@ -6,7 +6,9 @@
 
 namespace App\Models\Base;
 
+use App\Models\CustomerPreference;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -24,6 +26,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $deleted_at
+ * 
+ * @property Collection|CustomerPreference[] $customer_preferences
  *
  * @package App\Models\Base
  */
@@ -35,4 +39,9 @@ class LandingPage extends Model
 	protected $casts = [
 		'is_public' => 'bool'
 	];
+
+	public function customer_preferences()
+	{
+		return $this->hasMany(CustomerPreference::class);
+	}
 }

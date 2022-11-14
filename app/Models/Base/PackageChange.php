@@ -1,18 +1,18 @@
 <?php
 
 /**
- *
+ * Created by Reliese Model.
  */
 
 namespace App\Models\Base;
 
-use App\Models\User;
+use App\Models\Usr;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class PackageChange
- *
+ * 
  * @property int $id
  * @property int $user_id
  * @property int $type
@@ -20,8 +20,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property int|null $to
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- *
- * @property User $user
+ * 
+ * @property Usr $usr
  *
  * @package App\Models\Base
  */
@@ -36,8 +36,8 @@ class PackageChange extends Model
 		'to' => 'int'
 	];
 
-	public function user()
+	public function usr()
 	{
-		return $this->belongsTo(User::class, 'user_id', 'usr_id');
+		return $this->belongsTo(Usr::class, 'user_id');
 	}
 }

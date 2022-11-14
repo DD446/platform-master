@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $id
  * @property int $user_id
  * @property string $service
+ * @property int $status
  * @property array $payload
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -27,6 +28,7 @@ class WebhookSend extends Model
 
 	protected $casts = [
 		'user_id' => 'int',
+		'status' => 'int',
 		'payload' => 'json'
 	];
 }

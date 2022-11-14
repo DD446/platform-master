@@ -6,32 +6,30 @@
 
 namespace App\Models\Base;
 
+use App\Models\Team;
+use App\Models\Usr;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use App\Models\Team;
-use App\Models\User;
-use App\Scopes\IsActiveScope;
 
 /**
  * Class Member
- *
+ * 
  * @property int $id
  * @property int $user_id
  * @property int $team_id
- * @property Carbon $created_at
- * @property Carbon $updated_at
- * @property string $deleted_at
- *
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $deleted_at
+ * 
  * @property Team $team
- * @property User $user
+ * @property Usr $usr
  *
  * @package App\Models\Base
  */
 class Member extends Model
 {
 	use SoftDeletes;
-
 	protected $table = 'members';
 
 	protected $casts = [
@@ -44,8 +42,8 @@ class Member extends Model
 		return $this->belongsTo(Team::class);
 	}
 
-	public function user()
+	public function usr()
 	{
-		return $this->belongsTo(User::class, 'user_id')->withoutGlobalScope(IsActiveScope::class);
+		return $this->belongsTo(Usr::class, 'user_id');
 	}
 }

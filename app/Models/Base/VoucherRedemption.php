@@ -1,48 +1,46 @@
 <?php
 
 /**
- *
+ * Created by Reliese Model.
  */
 
 namespace App\Models\Base;
 
-use App\Models\User;
+use App\Models\Usr;
 use App\Models\Voucher;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class UserVoucherRedemption
- *
+ * Class VoucherRedemption
+ * 
  * @property int $id
  * @property int $user_id
  * @property int $voucher_id
- * @property int $amount
- *
- * @property User $user
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * 
+ * @property Usr $usr
  * @property Voucher $voucher
  *
  * @package App\Models\Base
  */
 class VoucherRedemption extends Model
 {
+	protected $table = 'voucher_redemptions';
+
 	protected $casts = [
 		'user_id' => 'int',
-		'voucher_id' => 'int',
-		'amount' => 'int'
+		'voucher_id' => 'int'
 	];
 
-	public function user()
+	public function usr()
 	{
-		return $this->belongsTo(User::class, 'user_id', 'usr_id');
+		return $this->belongsTo(Usr::class, 'user_id');
 	}
 
 	public function voucher()
 	{
 		return $this->belongsTo(Voucher::class);
 	}
-
-    public function scopeOwner($query)
-    {
-        return $query->where('user_id', '=', auth()->id());
-    }
 }

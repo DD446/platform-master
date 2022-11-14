@@ -23,6 +23,7 @@
             {!! $lp->content !!}
 
             @includeIf('landingpages.extras.' . $lp->id, $extras ?? [])
+            @include('landingpages.customers')
         </div>
         <!--end of container-->
     </section>

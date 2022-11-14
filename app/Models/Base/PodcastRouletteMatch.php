@@ -1,28 +1,29 @@
 <?php
 
 /**
- *
+ * Created by Reliese Model.
  */
 
 namespace App\Models\Base;
 
-use App\Models\User;
+use App\Models\PodcastRoulette;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class PodcastRouletteMatch
- *
+ * 
  * @property int $id
- * @property int $podcaster_one
- * @property int $podcaster_two
+ * @property int $roulette_id
+ * @property int $roulette_partner_id
  * @property int|null $file_id
  * @property int|null $cover_id
+ * @property string|null $shownotes
  * @property int $version
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- *
- * @property User $user
+ * 
+ * @property PodcastRoulette $podcast_roulette
  *
  * @package App\Models\Base
  */
@@ -35,15 +36,11 @@ class PodcastRouletteMatch extends Model
 		'roulette_partner_id' => 'int',
 		'file_id' => 'int',
 		'cover_id' => 'int',
+		'version' => 'int'
 	];
 
-	public function player()
+	public function podcast_roulette()
 	{
-		return $this->belongsTo(\App\Models\PodcastRoulette::class, 'roulette_id', 'id');
-	}
-
-	public function partner()
-	{
-		return $this->belongsTo(\App\Models\PodcastRoulette::class, 'roulette_partner_id', 'id');
+		return $this->belongsTo(PodcastRoulette::class, 'roulette_partner_id');
 	}
 }

@@ -1,30 +1,26 @@
 <?php
 
 /**
- *
+ * Created by Reliese Model.
  */
 
 namespace App\Models\Base;
 
+use App\Models\Team;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Team;
-use App\Models\User;
 
 /**
  * Class MemberQueue
- *
+ * 
  * @property int $id
  * @property string $email
  * @property string $hash
  * @property int $team_id
- * @property int $owner_id
  * @property int $role_id
- * @property Carbon $created_at
- * @property Carbon $updated_at
- * @property string $deleted_at
- *
- * @property User $user
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * 
  * @property Team $team
  *
  * @package App\Models\Base
@@ -35,14 +31,8 @@ class MemberQueue extends Model
 
 	protected $casts = [
 		'team_id' => 'int',
-		'owner_id' => 'int',
 		'role_id' => 'int'
 	];
-
-	public function user()
-	{
-		return $this->belongsTo(User::class, 'owner_id');
-	}
 
 	public function team()
 	{

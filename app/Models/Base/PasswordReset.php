@@ -1,7 +1,7 @@
 <?php
 
 /**
- *
+ * Created by Reliese Model.
  */
 
 namespace App\Models\Base;
@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class PasswordReset
- *
+ * 
  * @property string $email
  * @property string $token
  * @property Carbon|null $created_at
