@@ -28,4 +28,9 @@ class LandingPage extends BaseLandingPage
     {
         return Str::slug($this->title,'-', config('app.locale'));
     }
+
+    public function customerReferences()
+    {
+        return $this->hasMany(\App\Models\CustomerPreference::class);
+    }
 }
