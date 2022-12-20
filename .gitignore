@@ -26,3 +26,5 @@ auth.json
 /public/mix-manifest.json
 /public/images
 /public/pdf1
+/nova-components/PioniereManagement/node_modules/
+/nova-components/PioniereCheckManagement/node_modules/

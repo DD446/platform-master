@@ -5,7 +5,7 @@
  * Time: 11:07
  */
 
-namespace App\PioniereCheckManagement\Http\Controllers;
+namespace Audiotakes\PioniereCheckManagement\Http\Controllers;
 
 use App\Classes\Activity;
 use App\Models\AudiotakesContract;
@@ -16,7 +16,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 
-class UserController extends Controller
+class CheckController extends Controller
 {
     use ValidatesRequests;
 

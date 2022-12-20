@@ -23,6 +23,10 @@
         {
             "type": "path",
             "url": "./nova-components/SaasMetrics"
+        },
+        {
+            "type": "path",
+            "url": "./nova-components/PioniereCheckManagement"
         }
     ],
     "require": {
@@ -115,7 +119,8 @@
         "umpirsky/language-list": "^1.1",
         "usmanhalalit/laracsv": "^2.1",
         "visualappeal/matomo-php-api": "^1.6",
-        "webpatser/laravel-countries": "^1.5"
+        "webpatser/laravel-countries": "^1.5",
+        "audiotakes/pioniere-check-management": "*"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^v3.7",
@@ -176,7 +181,7 @@
         "sort-packages": true,
         "optimize-autoloader": true,
         "platform": {
-            "php":"7.4"
+            "php": "7.4"
         }
     },
     "minimum-stability": "dev",

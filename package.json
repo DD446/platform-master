@@ -13,7 +13,9 @@
         "build-pioniere-management": "cd nova-components/PioniereManagement && yarn run dev",
         "build-pioniere-management-prod": "cd nova-components/PioniereManagement && yarn run prod",
         "build-SaasMetrics": "cd nova-components/SaasMetrics && yarn run dev",
-        "build-SaasMetrics-prod": "cd nova-components/SaasMetrics && yarn run prod"
+        "build-SaasMetrics-prod": "cd nova-components/SaasMetrics && yarn run prod",
+        "build-pioniere-check-management": "cd nova-components/PioniereCheckManagement && npm run dev",
+        "build-pioniere-check-management-prod": "cd nova-components/PioniereCheckManagement && npm run prod"
     },
     "dependencies": {
         "@ckeditor/ckeditor5-build-balloon": "^29.2.0",
