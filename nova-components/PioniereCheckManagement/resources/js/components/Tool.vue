@@ -2,7 +2,7 @@
     <div>
         <heading class="mb-6">Pioniere Check Management</heading>
 
-      {{ dat }}
+<!--      {{ dat }}-->
     </div>
 </template>
 
