@@ -213,7 +213,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      dat: null,
+      users: null,
       currentPage: 1,
       initialLoading: false
     };
@@ -222,7 +222,8 @@ __webpack_require__.r(__webpack_exports__);
     getUsers: function getUsers(page) {
       var _this = this;
       Nova.request().get('/nova-vendor/pioniere-check-management/users?page=' + page).then(function (response) {
-        _this.dat = response.data;
+        _this.users = response.data.users;
+        _this.currentPage = response.data.currentPage;
       });
     },
     loadMore: function loadMore() {
@@ -259,9 +260,35 @@ var render = function render() {
     _c = _vm._self._c;
   return _c("div", [_c("heading", {
     staticClass: "mb-6"
-  }, [_vm._v("Pioniere Check Management")]), _vm._v("\n\n  " + _vm._s(_vm.dat) + "\n")], 1);
+  }, [_vm._v("Pioniere Check Management")]), _vm._v(" "), _c("table", {
+    staticClass: "table w-full bg-white",
+    attrs: {
+      cellpadding: "0",
+      cellspacing: "0"
+    }
+  }, [_vm._m(0), _vm._v(" "), _c("tbody", _vm._l(_vm.users, function (user, usr_id) {
+    return _c("tr", {
+      key: usr_id
+    }, [_c("td", [_vm._v("\n            " + _vm._s(user.username) + "\n")])]);
+  }), 0)]), _vm._v(" "), _vm.users ? _c("pagination-load-more", {
+    attrs: {
+      "current-resource-count": "currentResourceCount",
+      "all-matching-resource-count": _vm.total,
+      "resource-count-label": "",
+      "per-page": _vm.perPage,
+      page: _vm.currentPage,
+      pages: _vm.pages
+    },
+    on: {
+      "load-more": _vm.loadMore
+    }
+  }) : _vm._e(), _vm._v("\n\n      #" + _vm._s(_vm.users) + "#\n\n    ")], 1);
 };
-var staticRenderFns = [];
+var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("thead", [_c("tr", [_c("th", [_vm._v("\n            Username\n          ")])])]);
+}];
 render._withStripped = true;
 
 

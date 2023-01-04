@@ -10,11 +10,13 @@ namespace Audiotakes\PioniereCheckManagement\Http\Controllers;
 use App\Classes\Activity;
 use App\Models\AudiotakesContract;
 use App\Models\Feed;
+use App\Models\User;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
+use function React\Promise\all;
 
 class CheckController extends Controller
 {
@@ -63,6 +65,7 @@ class CheckController extends Controller
             }
         }
 
+        //$users = User::all();
         $data['users'] = $users;
 
         return response()->json($data);
