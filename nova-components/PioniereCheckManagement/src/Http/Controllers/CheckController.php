@@ -65,7 +65,7 @@ class CheckController extends Controller
             }
         }
 
-        //$users = User::all();
+        $users = User::all();
         $data['users'] = $users;
 
         return response()->json($data);

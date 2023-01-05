@@ -1,7 +1,8 @@
 <template>
-    <div>
-        <heading class="mb-6">Pioniere Check Management</heading>
 
+    <div>
+      <heading class="mb-6">Pioniere Check Management</heading>
+        <div ref="waveform"></div>
       <table
           cellpadding="0"
           cellspacing="0"
@@ -9,45 +10,33 @@
         <thead><!--definiert eine Reihe von Zeilen, die den Kopf der Spalten der Tabelle definieren-->
         <tr><!--definiert eine Reihe von Zellen in einer Tabelle-->
           <th><!--definiert eine Zelle als Überschrift einer Gruppe von Tabellenzellen-->
+            Logo
+          </th>
+         <th>
             Username
           </th>
-<!--          <th>
-            audio<em>takes</em>-ID
+          <th>
+            neueste Folge
           </th>
           <th>
-            Name
+            Link
           </th>
           <th>
-            E-Mail
+            Player
           </th>
-          <th>
-            Telefon
-          </th>
-          <th>
-            Feed-ID
-          </th>
-          <th>
-            Podcast-Titel
-          </th>
-          <th>
-            Aktiv
-          </th>
-          <th>
-            RSS-Feed
-          </th>
-          <th>
-            podcast.de
-          </th>-->
         </tr>
         </thead>
         <tbody>
-        <tr v-for="(user, usr_id) in users" :key="usr_id">
-          <td><!--definiert eine Zelle einer Tabelle, die Daten enthält-->
-            {{ user.username }}
+        <tr v-for="(user, usr_id) in users" :key="usr_id"><!--Schleifendurchlauf der Benutzer nach ID-->
+          <td class="text-center">
+            <boolean-icon :value="user.isActive==1" width="20" height="20" /></td><!--definiert eine Zelle einer Tabelle, die Daten enthält-->
 <!--            <a :href="user.feedImage" rel="download" v-if="user.feedImage">
               <img :src="user.feedImage" :alt="user.feedImage" style="max-width:100px" />
             </a>-->
-          </td>
+
+
+          <td class="text-center">{{ user.username }}</td>
+          <td class="text-center">{{ user.feedTitle }}</td>
 <!--          <td class="text-center">{{ user.contract.identifier }}</td>
           <td class="text-center">{{ user.contract.first_name }} {{ user.contract.last_name }}</td>
           <td class="text-center">{{ user.contract.email }}</td>
@@ -79,7 +68,9 @@
 </template>
 
 <script>
+import WaveSurfer from "wavesurfer.js";
 export default {
+  name: 'MyComponent',
   data() {
     return {
       users: null,
@@ -104,8 +95,18 @@ export default {
     mounted() {
       this.getUsers(this.currentPage);
       this.initialLoading = false;
+      this.wavesurfer = WaveSurfer.create({
+        container: this.$refs.waveform,
+        waveColor: 'orange',
+        progressColor: 'white'
+      })
+      this.wavesurfer.load('https://deliver.audiotakes.net/d/podcast-plattform.podcaster.de/p/podcastde-news/m/221123_NAPS_Internationale_Podcast-Markte__China_mixdown_auphonic.mp3?awCollectionId=at-grdzz&awEpisodeId=at-grdzz-5c3a7cda98f38c24bffc6a413b4a8b953c023675&origin=feed&v=16');
     },
-    metaInfo() {
+
+    beforeDestroy() {
+    this.wavesurfer.destroy();
+    },
+  metaInfo() {
         return {
           title: 'PioniereCheckManagement',
         }
