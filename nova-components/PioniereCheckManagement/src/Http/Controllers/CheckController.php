@@ -65,10 +65,9 @@ class CheckController extends Controller
             }
         }
 
-        $users = User::all();
-        $data['users'] = $users;
+        $users = User::paginate();
 
-        return response()->json($data);
+        return response()->json($users);
     }
 
     public function listing()

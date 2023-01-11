@@ -1,6 +1,45 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./resources/js/components/PlayPauseButton.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/PlayPauseButton.vue ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _PlayPauseButton_vue_vue_type_template_id_308eaf59_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PlayPauseButton.vue?vue&type=template&id=308eaf59&scoped=true& */ "./resources/js/components/PlayPauseButton.vue?vue&type=template&id=308eaf59&scoped=true&");
+/* harmony import */ var _PlayPauseButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PlayPauseButton.vue?vue&type=script&lang=js& */ "./resources/js/components/PlayPauseButton.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "../../node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _PlayPauseButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PlayPauseButton_vue_vue_type_template_id_308eaf59_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _PlayPauseButton_vue_vue_type_template_id_308eaf59_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "308eaf59",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/PlayPauseButton.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/Tool.vue":
 /*!******************************************!*\
   !*** ./resources/js/components/Tool.vue ***!
@@ -42,6 +81,22 @@ component.options.__file = "resources/js/components/Tool.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/PlayPauseButton.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/PlayPauseButton.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PlayPauseButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PlayPauseButton.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PlayPauseButton.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PlayPauseButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/Tool.vue?vue&type=script&lang=js&":
 /*!*******************************************************************!*\
   !*** ./resources/js/components/Tool.vue?vue&type=script&lang=js& ***!
@@ -55,6 +110,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tool_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Tool.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Tool.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tool_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/PlayPauseButton.vue?vue&type=template&id=308eaf59&scoped=true&":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/components/PlayPauseButton.vue?vue&type=template&id=308eaf59&scoped=true& ***!
+  \************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PlayPauseButton_vue_vue_type_template_id_308eaf59_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PlayPauseButton_vue_vue_type_template_id_308eaf59_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PlayPauseButton_vue_vue_type_template_id_308eaf59_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PlayPauseButton.vue?vue&type=template&id=308eaf59&scoped=true& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PlayPauseButton.vue?vue&type=template&id=308eaf59&scoped=true&");
+
 
 /***/ }),
 
@@ -6298,6 +6370,57 @@ module.exports = debounce;
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PlayPauseButton.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PlayPauseButton.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var wavesurfer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! wavesurfer.js */ "../../node_modules/wavesurfer.js/dist/wavesurfer.js");
+/* harmony import */ var wavesurfer_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(wavesurfer_js__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "PlayPauseButton",
+  data: function data() {
+    return {
+      playback: 'paused',
+      imageSrcPlay: 'https://www.podcast.de/images/svg/html5player_play.svg',
+      imageSrcPause: 'https://www.podcast.de/images/svg/html5player_pause.svg'
+    };
+  },
+  props: {
+    ws: null
+  },
+  methods: {
+    play: function play() {
+      this.ws.load('https://deliver.audiotakes.net/d/podcast-plattform.podcaster.de/p/podcastde-news/m/221123_NAPS_Internationale_Podcast-Markte__China_mixdown_auphonic.mp3?awCollectionId=at-grdzz&awEpisodeId=at-grdzz-5c3a7cda98f38c24bffc6a413b4a8b953c023675&origin=feed&v=16');
+      this.playback = 'playing';
+    },
+    // erstellt die Pausefunktion
+    pause: function pause() {
+      this.ws.pause();
+      this.playback = 'paused';
+    },
+    // wechselt beim Draufklicken zwischen Play- und Pausesymbol
+    changeImage: function changeImage() {
+      if (this.imageSrcPlay === 'https://www.podcast.de/images/svg/html5player_play.svg') {
+        this.imageSrcPlay = this.imageSrcPause;
+      } else {
+        this.imageSrcPlay = 'https://www.podcast.de/images/svg/html5player_play.svg';
+        pause();
+      }
+    }
+  },
+  mounted: function mounted() {}
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Tool.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Tool.vue?vue&type=script&lang=js& ***!
@@ -6311,26 +6434,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var wavesurfer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! wavesurfer.js */ "../../node_modules/wavesurfer.js/dist/wavesurfer.js");
 /* harmony import */ var wavesurfer_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(wavesurfer_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _PlayPauseButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PlayPauseButton */ "./resources/js/components/PlayPauseButton.vue");
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'MyComponent',
+  components: {
+    PlayPauseButton: _PlayPauseButton__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
   data: function data() {
     return {
+      url: '',
+      wavesurfer: null,
+      wavesurferReady: false,
+      urlLoaded: null,
       users: null,
       currentPage: 1,
-      initialLoading: false
+      initialLoading: false,
+      volume: 1,
+      perPage: 10,
+      total: 0
     };
+  },
+  // lässt die Volumenscrollbar funktionieren
+  watch: {
+    volume: function volume(newValue) {
+      this.wavesurfer.setVolume(newValue);
+    }
   },
   methods: {
     getUsers: function getUsers(page) {
       var _this = this;
       Nova.request().get('/nova-vendor/pioniere-check-management/users?page=' + page).then(function (response) {
-        _this.users = response.data.users;
-        _this.currentPage = response.data.currentPage;
+        _this.users = response.data.data;
+        _this.currentPage = response.data.current_page;
+        _this.perPage = response.data.per_page;
+        _this.total = response.data.total;
       });
     },
     loadMore: function loadMore() {
       this.getUsers(++this.currentPage);
+    },
+    // implementiert die Volume-Bar
+    onVolumeChange: function onVolumeChange(volume) {
+      this.wavesurfer.volume();
+    },
+    // wechselt beim Draufklicken zwischen Play- und Pausesymbol
+    changeImage: function changeImage() {
+      if (this.imageSrcPlay === 'https://www.podcast.de/images/svg/html5player_play.svg') {
+        this.imageSrcPlay = this.imageSrcPause;
+      } else {
+        this.imageSrcPlay = 'https://www.podcast.de/images/svg/html5player_play.svg';
+        pause();
+      }
     }
   },
   mounted: function mounted() {
@@ -6339,9 +6495,10 @@ __webpack_require__.r(__webpack_exports__);
     this.wavesurfer = wavesurfer_js__WEBPACK_IMPORTED_MODULE_0___default().create({
       container: this.$refs.waveform,
       waveColor: 'orange',
-      progressColor: 'white'
+      progressColor: 'black'
     });
-    this.wavesurfer.load('https://deliver.audiotakes.net/d/podcast-plattform.podcaster.de/p/podcastde-news/m/221123_NAPS_Internationale_Podcast-Markte__China_mixdown_auphonic.mp3?awCollectionId=at-grdzz&awEpisodeId=at-grdzz-5c3a7cda98f38c24bffc6a413b4a8b953c023675&origin=feed&v=16');
+    this.wavesurfer.on('ready', this.wavesurfer.play.bind(this.wavesurfer));
+    // this.wavesurfer.load('https://deliver.audiotakes.net/d/podcast-plattform.podcaster.de/p/podcastde-news/m/221123_NAPS_Internationale_Podcast-Markte__China_mixdown_auphonic.mp3?awCollectionId=at-grdzz&awEpisodeId=at-grdzz-5c3a7cda98f38c24bffc6a413b4a8b953c023675&origin=feed&v=16');
   },
   beforeDestroy: function beforeDestroy() {
     this.wavesurfer.destroy();
@@ -6352,6 +6509,51 @@ __webpack_require__.r(__webpack_exports__);
     };
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PlayPauseButton.vue?vue&type=template&id=308eaf59&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PlayPauseButton.vue?vue&type=template&id=308eaf59&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", [_vm.playback === "paused" ? _c("button", {
+    on: {
+      click: function click($event) {
+        return _vm.play();
+      }
+    }
+  }, [_c("img", {
+    attrs: {
+      src: _vm.imageSrcPlay,
+      alt: "Play"
+    }
+  })]) : _vm._e(), _vm._v(" "), _vm.playback === "playing" ? _c("button", {
+    on: {
+      click: function click($event) {
+        return _vm.pause();
+      }
+    }
+  }, [_c("img", {
+    attrs: {
+      src: _vm.imageSrcPause,
+      alt: "Pause"
+    }
+  })]) : _vm._e()]);
+};
+var staticRenderFns = [];
+render._withStripped = true;
+
 
 /***/ }),
 
@@ -6373,8 +6575,32 @@ var render = function render() {
   return _c("div", [_c("heading", {
     staticClass: "mb-6"
   }, [_vm._v("Pioniere Check Management")]), _vm._v(" "), _c("div", {
-    ref: "waveform"
-  }), _vm._v(" "), _c("table", {
+    ref: "waveform",
+    attrs: {
+      id: "wavesurfer-container"
+    }
+  }, [_c("p", [_vm._v("Episode")])]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.volume,
+      expression: "volume"
+    }],
+    attrs: {
+      type: "range",
+      min: "0",
+      max: "1",
+      step: "0.01"
+    },
+    domProps: {
+      value: _vm.volume
+    },
+    on: {
+      __r: function __r($event) {
+        _vm.volume = $event.target.value;
+      }
+    }
+  }), _vm._v(" "), _c("p", {}, [_vm._v("\n    URL : " + _vm._s(_vm.urlLoaded) + "\n  ")]), _vm._v(" "), _c("table", {
     staticClass: "table w-full bg-white",
     attrs: {
       cellpadding: "0",
@@ -6385,17 +6611,53 @@ var render = function render() {
       key: usr_id
     }, [_c("td", {
       staticClass: "text-center"
-    }, [_c("boolean-icon", {
+    }, [_vm._v(_vm._s(user.identifier))]), _vm._v(" "), user.feedImage ? _c("a", {
       attrs: {
-        value: user.isActive == 1,
-        width: "20",
-        height: "20"
+        href: user.feedImage,
+        rel: "download"
       }
-    })], 1), _vm._v(" "), _c("td", {
+    }, [_c("img", {
+      staticStyle: {
+        "max-width": "100px"
+      },
+      attrs: {
+        src: user.feedImage,
+        alt: user.feedImage
+      }
+    })]) : _vm._e(), _vm._v(" "), _c("td", {
       staticClass: "text-center"
     }, [_vm._v(_vm._s(user.username))]), _vm._v(" "), _c("td", {
       staticClass: "text-center"
-    }, [_vm._v(_vm._s(user.feedTitle))])]);
+    }, [_c("a", {
+      directives: [{
+        name: "show",
+        rawName: "v-show",
+        value: user.feedLink,
+        expression: "user.feedLink"
+      }],
+      attrs: {
+        href: user.feedLink
+      }
+    }, [_vm._v("Link")])]), _vm._v(" "), _c("td", {
+      staticClass: "text-center"
+    }, [_c("a", {
+      directives: [{
+        name: "show",
+        rawName: "v-show",
+        value: user.feedTitle,
+        expression: "user.feedTitle"
+      }],
+      attrs: {
+        href: user.podcastLink,
+        target: "_blank"
+      }
+    }, [_vm._v("podcast.de")])]), _vm._v(" "), _c("td", {
+      staticClass: "text-center"
+    }, [_c("play-pause-button", {
+      attrs: {
+        ws: _vm.wavesurfer
+      }
+    })], 1)]);
   }), 0)]), _vm._v(" "), _vm.users ? _c("pagination-load-more", {
     attrs: {
       "current-resource-count": "currentResourceCount",
@@ -6408,12 +6670,12 @@ var render = function render() {
     on: {
       "load-more": _vm.loadMore
     }
-  }) : _vm._e(), _vm._v("\n\n      #" + _vm._s(_vm.users) + "#\n\n    ")], 1);
+  }) : _vm._e(), _vm._v("\n\n  #" + _vm._s(_vm.currentPage) + "#\n\n\n\n")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("thead", [_c("tr", [_c("th", [_vm._v("\n            Logo\n          ")]), _vm._v(" "), _c("th", [_vm._v("\n            Username\n          ")]), _vm._v(" "), _c("th", [_vm._v("\n            neueste Folge\n          ")]), _vm._v(" "), _c("th", [_vm._v("\n            Link\n          ")]), _vm._v(" "), _c("th", [_vm._v("\n            Player\n          ")])])]);
+  return _c("thead", [_c("tr", [_c("th", [_vm._v("\n        Logo\n      ")]), _vm._v(" "), _c("th", [_vm._v("\n        Username\n      ")]), _vm._v(" "), _c("th", [_vm._v("\n        neueste Folge\n      ")]), _vm._v(" "), _c("th", [_vm._v("\n        Link\n      ")]), _vm._v(" "), _c("th", [_vm._v("\n        Play\n      ")])])]);
 }];
 render._withStripped = true;
 
@@ -6453,7 +6715,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n/* Scoped Styles */\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n/*#wavesurfer-container {\n  position: relative;\n}\n#playPause-button {\n  position: absolute;\n  top: 50%;\n  left: 0;\n  transform: translateY(-50%);\n}*/\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
