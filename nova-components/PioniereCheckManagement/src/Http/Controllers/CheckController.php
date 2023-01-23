@@ -41,11 +41,13 @@ class CheckController extends Controller
             if (!$contract->user) {
                 continue;
             }
-            $feed = Feed::select(['rss.title', 'domain', 'settings', 'logo.itunes', 'submit_links'])
+            $feed = Feed::select(['rss.title', 'domain', 'settings', 'logo.itunes', 'entries'])
                 ->whereUsername($contract->user->username)
                 ->whereFeedId($contract->feed_id)
                 ->where('settings.audiotakes_id', '=', $contract->identifier)
                 ->first();
+            $entries = $feed->entries;
+
             if ($feed) {
                 try {
                     $file = false;
@@ -60,12 +62,12 @@ class CheckController extends Controller
                     'feedTitle' => $feed->rss['title'],
                     'feedLink' => get_feed_uri($contract->feed_id, $feed->domain),
                     'feedImage' => $file ? get_image_uri($contract->feed_id, $file['name'], $feed->domain) : null,
-                    'podcastLink' => $feed->submit_links['podcast'] ?? 'https://www.podcast.de/suche?q=' . $feed->rss['title'],
+                    'newestEntry' => $entries[0]
                 ];
             }
         }
 
-        $users = User::paginate();
+        //$users = User::paginate();
 
         return response()->json($users);
     }

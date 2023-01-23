@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Base\AudiotakesContract as BaseAudiotakesContract;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Log;
@@ -10,7 +11,8 @@ use Jenssegers\Mongodb\Eloquent\HybridRelations;
 
 class AudiotakesContract extends BaseAudiotakesContract
 {
-    use SoftDeletes, HybridRelations;
+    use SoftDeletes, HybridRelations, HasFactory;
+
     const PLATFORM_HOLDBACK = 10;
 
     const GENERAL_SUBSTRACTION = 35; // preshare

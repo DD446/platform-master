@@ -5,7 +5,7 @@
  * Time: 11:07
  */
 
-namespace App\PioniereCheckManagement\Http\Controllers;
+namespace App\PioniereManagement\Http\Controllers;
 
 use App\Classes\Activity;
 use App\Models\AudiotakesContract;

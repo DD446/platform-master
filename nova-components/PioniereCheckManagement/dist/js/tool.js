@@ -6414,9 +6414,9 @@ __webpack_require__.r(__webpack_exports__);
         this.imageSrcPlay = 'https://www.podcast.de/images/svg/html5player_play.svg';
         pause();
       }
-    }
-  },
-  mounted: function mounted() {}
+    },
+    mounted: function mounted() {}
+  }
 });
 
 /***/ }),
@@ -6448,6 +6448,7 @@ __webpack_require__.r(__webpack_exports__);
       wavesurfer: null,
       wavesurferReady: false,
       urlLoaded: null,
+      title: null,
       users: null,
       currentPage: 1,
       initialLoading: false,
@@ -6472,30 +6473,31 @@ __webpack_require__.r(__webpack_exports__);
         _this.total = response.data.total;
       });
     },
+    // Methode zur alleinigen Funktionalität
+    resetAndToggle: function resetAndToggle(usr_id) {
+      this.users.forEach(function (user) {
+        user.isPlaying = false;
+      });
+      this.users[usr_id].isPlaying = true;
+    },
     loadMore: function loadMore() {
       this.getUsers(++this.currentPage);
     },
     // implementiert die Volume-Bar
     onVolumeChange: function onVolumeChange(volume) {
       this.wavesurfer.volume();
-    },
-    // wechselt beim Draufklicken zwischen Play- und Pausesymbol
-    changeImage: function changeImage() {
-      if (this.imageSrcPlay === 'https://www.podcast.de/images/svg/html5player_play.svg') {
-        this.imageSrcPlay = this.imageSrcPause;
-      } else {
-        this.imageSrcPlay = 'https://www.podcast.de/images/svg/html5player_play.svg';
-        pause();
-      }
     }
   },
   mounted: function mounted() {
     this.getUsers(this.currentPage);
     this.initialLoading = false;
     this.wavesurfer = wavesurfer_js__WEBPACK_IMPORTED_MODULE_0___default().create({
-      container: this.$refs.waveform,
+      container: '.box2',
       waveColor: 'orange',
-      progressColor: 'black'
+      progressColor: 'black',
+      barWidth: 2,
+      barRadius: 2,
+      responsive: true
     });
     this.wavesurfer.on('ready', this.wavesurfer.play.bind(this.wavesurfer));
     // this.wavesurfer.load('https://deliver.audiotakes.net/d/podcast-plattform.podcaster.de/p/podcastde-news/m/221123_NAPS_Internationale_Podcast-Markte__China_mixdown_auphonic.mp3?awCollectionId=at-grdzz&awEpisodeId=at-grdzz-5c3a7cda98f38c24bffc6a413b4a8b953c023675&origin=feed&v=16');
@@ -6575,11 +6577,16 @@ var render = function render() {
   return _c("div", [_c("heading", {
     staticClass: "mb-6"
   }, [_vm._v("Pioniere Check Management")]), _vm._v(" "), _c("div", {
-    ref: "waveform",
+    staticClass: "wavecontainer"
+  }, [_c("div", {
+    staticClass: "box1"
+  }, [_c("PlayPauseButton", {
     attrs: {
-      id: "wavesurfer-container"
+      ws: _vm.wavesurfer
     }
-  }, [_c("p", [_vm._v("Episode")])]), _vm._v(" "), _c("input", {
+  }), _vm._v(" "), _c("div", {
+    staticClass: "volume"
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -6600,7 +6607,20 @@ var render = function render() {
         _vm.volume = $event.target.value;
       }
     }
-  }), _vm._v(" "), _c("p", {}, [_vm._v("\n    URL : " + _vm._s(_vm.urlLoaded) + "\n  ")]), _vm._v(" "), _c("table", {
+  })])], 1), _vm._v(" "), _c("div", {
+    staticClass: "box2"
+  }, [_c("p", {
+    staticClass: "url"
+  }, [_vm._v("\n        URL : " + _vm._s(_vm.urlLoaded) + "\n      ")]), _vm._v(" "), _c("div", {
+    ref: "waveform",
+    attrs: {
+      id: "wavesurfer"
+    }
+  }, [_c("p", {
+    staticClass: "title"
+  }, [_vm._v("\n          Titel : " + _vm._s(_vm.title) + "\n        ")])])])]), _vm._v(" "), _c("div", {
+    staticClass: "spaceBetweenPlayerTable"
+  }), _vm._v(" "), _c("table", {
     staticClass: "table w-full bg-white",
     attrs: {
       cellpadding: "0",
@@ -6654,10 +6674,18 @@ var render = function render() {
     }, [_vm._v("podcast.de")])]), _vm._v(" "), _c("td", {
       staticClass: "text-center"
     }, [_c("play-pause-button", {
+      "class": {
+        playing: user.isPlaying
+      },
       attrs: {
         ws: _vm.wavesurfer
+      },
+      on: {
+        click: function click($event) {
+          return _vm.resetAndToggle(usr_id);
+        }
       }
-    })], 1)]);
+    }, [_vm._v("\n          " + _vm._s(user.isPlaying ? "Pause" : "Play") + "\n        ")])], 1)]);
   }), 0)]), _vm._v(" "), _vm.users ? _c("pagination-load-more", {
     attrs: {
       "current-resource-count": "currentResourceCount",
@@ -6670,7 +6698,7 @@ var render = function render() {
     on: {
       "load-more": _vm.loadMore
     }
-  }) : _vm._e(), _vm._v("\n\n  #" + _vm._s(_vm.currentPage) + "#\n\n\n\n")], 1);
+  }) : _vm._e(), _vm._v("\n\n  #" + _vm._s(_vm.currentPage) + "#\n  #" + _vm._s(_vm.users) + "#\n\n")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -6715,7 +6743,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n/*#wavesurfer-container {\n  position: relative;\n}\n#playPause-button {\n  position: absolute;\n  top: 50%;\n  left: 0;\n  transform: translateY(-50%);\n}*/\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.wavecontainer {\n  border-radius: 10px;\n  box-shadow:  -3px -3px 2px orange;\n  position: relative;\n  width: 100%;\n  height: 128px;\n  display: flex;\n  flex-wrap: nowrap;\n  background: linear-gradient(rgba(0,0,0,0.5),#dbdada);\n}\n.box1 {\n  width: 30%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.box2 {\n  position: relative;\n  flex-basis: 70%;\n}\n.url {\n  position: absolute;\n  padding-left: 20px;\n  top: 0;\n}\n.title {\n  position: absolute;\n  padding-left: 20px;\n  bottom: 0;\n}\n.volume {\n  position: absolute;\n  bottom: 0;\n}\n.spaceBetweenPlayerTable {\n  height: 30px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

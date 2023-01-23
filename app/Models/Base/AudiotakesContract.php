@@ -31,7 +31,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
- * @property User $usr
+ * @property User $user
  *
  * @package App\Models\Base
  */
