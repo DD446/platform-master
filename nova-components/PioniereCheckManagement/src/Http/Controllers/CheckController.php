@@ -37,15 +37,45 @@ class CheckController extends Controller
         ];
         $users = [];
 
+        $contracts = [];
+        $ac = new AudiotakesContract(['user_id' => 3, 'username' => 'danny', 'feed_id' => 'dannyFeed',
+            'identifier' => 'at-danny']);
+        $ac->url = 'https://deliver.audiotakes.net/d/podcast-plattform.podcaster.de/p/podcastde-news/m/230113_NAPS_IPM_AnikaBors_mixdown1_auphonic.mp3?awCollectionId=at-grdzz&awEpisodeId=at-grdzz-be17f036deefd54c8ef338296f2311f1870d57e8&origin=feed&v=1674212523';
+        $contracts[] = $ac;
+        $ac = new AudiotakesContract(['user_id' => 4, 'username' => 'ludwig64', 'feed_id' => 'ludwigFeed',
+            'identifier' => 'at-ludwig']);
+        $ac->url = 'https://deliver.audiotakes.net/d/podcast-plattform.podcaster.de/p/podcastde-news/m/NAPS_-_Podcast_Test_1-1_-_Alejandro_Brukman_-44-1_16_-14-0_LUFS-I-_01_auphonic.mp3?awCollectionId=at-grdzz&awEpisodeId=at-grdzz-08fa7dedbaadb7e8440ac2353890eedee1f31a0b&ori';
+        $contracts[] = $ac;
+
         foreach ($contracts as $contract) {
             if (!$contract->user) {
                 continue;
             }
-            $feed = Feed::select(['rss.title', 'domain', 'settings', 'logo.itunes', 'entries'])
+/*            $feed = Feed::select(['rss.title', 'domain', 'settings', 'logo.itunes', 'entries'])
                 ->whereUsername($contract->user->username)
                 ->whereFeedId($contract->feed_id)
                 ->where('settings.audiotakes_id', '=', $contract->identifier)
-                ->first();
+                ->first();*/
+            $feed = new Feed(['feed_id' => $contract->feed_id,
+                'username' => $contract->user->username,
+                'entries' => [
+                    [
+                        'title' => $contract->user_id . '. Episode',
+                        'guid' => get_guid('pod-'),
+                        'show_media' => rand(),
+                        'url' => $contract->url,
+                    ],
+                    [
+                        'title' => '2. Episode',
+                        'guid' => get_guid('pod-'),
+                        'show_media' => 23456,
+                        'url' => $contract->url
+                    ]
+                ],
+                'settings' => ['audiotakes' => 1],
+                'rss' => ['title' => $contract->user->username . 's Podcast'],
+                'domain' => get_default_domain($contract->user->username),
+            ]);
             $entries = $feed->entries;
 
             if ($feed) {
@@ -62,7 +92,8 @@ class CheckController extends Controller
                     'feedTitle' => $feed->rss['title'],
                     'feedLink' => get_feed_uri($contract->feed_id, $feed->domain),
                     'feedImage' => $file ? get_image_uri($contract->feed_id, $file['name'], $feed->domain) : null,
-                    'newestEntry' => $entries[0]
+                    'newestEntry' => $entries[0],
+                    'username' => $contract->user->username,
                 ];
             }
         }

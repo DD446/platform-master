@@ -3,7 +3,7 @@
     <button  @click="play()" v-if="playback === 'paused'">
       <img v-bind:src="imageSrcPlay" alt="Play">
     </button>
-    <button  @click="pause()" v-if="playback === 'playing'">
+    <button  @click="pause" v-if="playback === 'playing'">
       <img v-bind:src="imageSrcPause" alt="Pause">
     </button>
 <!--    <button :class="playState" @click="changeState"></button>-->
@@ -12,6 +12,7 @@
 
 <script>
 import WaveSurfer from "wavesurfer.js";
+import eventHub from "./EventHub";
 
 export default {
   name: "PlayPauseButton",
@@ -25,6 +26,10 @@ export default {
   },
 
   props: {
+    entry: {
+      type: Object,
+      required: true
+    },
     ws: null
   },
 
@@ -32,8 +37,9 @@ export default {
 
     play() {
       this.ws
-          .load('https://deliver.audiotakes.net/d/podcast-plattform.podcaster.de/p/podcastde-news/m/221123_NAPS_Internationale_Podcast-Markte__China_mixdown_auphonic.mp3?awCollectionId=at-grdzz&awEpisodeId=at-grdzz-5c3a7cda98f38c24bffc6a413b4a8b953c023675&origin=feed&v=16');
+          .load(this.entry.url);
       this.playback = 'playing'
+      this.$emit('play', {url: this.entry.url});
     },
 
     // erstellt die Pausefunktion
@@ -54,6 +60,11 @@ export default {
     },
 
     mounted() {
+      console.log(eventHub)
+      this.$on('all-paused', () => {
+        console.log('ALL PAUSED');
+        //this.pause();
+      });
     },
   },
 
