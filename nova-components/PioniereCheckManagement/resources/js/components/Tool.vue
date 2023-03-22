@@ -167,7 +167,6 @@ export default {
     // lädt den wavesurfer nach ersten klick auf PPButton
     this.wavesurfer.on('ready', this.wavesurfer.play.bind(this.wavesurfer));
     this.wavesurfer.on('pause', () => { this.$emit('all-paused') });
-    //this.wavesurfer.on('pause', this.$emit('all-paused'));
     this.$on('play', (url) => {
       this.url = url;
     });
