@@ -55,9 +55,7 @@
       <tbody>
       <tr v-for="(user, usr_id) in users" :key="usr_id"><!--Schleifendurchlauf der Benutzer nach ID-->
 <!--        <td class="text-center">{{ user.identifier }}</td>--><!--definiert eine Zelle einer Tabelle, die Daten enthält-->
-<!--        <a :href="user.feedImage" rel="download" v-if="user.feedImage">
-          <img :src="user.feedImage" :alt="user.feedImage" style="max-width:100px"/>
-        </a>-->
+
         <td class="text-center">{{ user.username }}</td>
         <td class="text-center">{{ user.newestEntry.title }}</td>
         <td class="text-center"><a :href="user.podcastLink" v-show="user.feedTitle" target="_blank">{{ user.feedLink }}</a></td>
@@ -71,34 +69,9 @@
           </play-pause-button>
         </td>
 
-        <!--                    <td class="text-center">{{ user.contract.feedTitle }}</td>
-                                <td class="text-center"><a :href="user.feedLink" v-show="user.feedLink">Link</a></td>
-                                <td class="text-center"><a :href="user.podcastLink" v-show="user.feedTitle" target="_blank">podcast.de</a></td>
-                                <td class="text-center">{{ user.contract.identifier }}</td>
-                                <td class="text-center">{{ user.contract.first_name }} {{ user.contract.last_name }}</td>
-                                <td class="text-center">{{ user.contract.email }}</td>
-                                <td class="text-center">{{ user.contract.telephone }}</td>
-                                <td class="text-center">{{ user.contract.feed_id }}</td>
-                                <td class="text-center">{{ user.feedTitle }}</td>
-                                <td class="text-center"><boolean-icon :value="user.isActive==1" width="20" height="20" /></td>
-                                <td class="text-center"><a :href="user.feedLink" v-show="user.feedLink">Link</a></td>
-                                <td class="text-center"><a :href="user.podcastLink" v-show="user.feedTitle" target="_blank">podcast.de</a></td>-->
       </tr>
       </tbody>
     </table>
-
-
-    <!-- Informationsangebot wird auf mehrere Seiten aufgeteilt -->
-<!--    <pagination-load-more
-        v-if="users"
-        current-resource-count="currentResourceCount"
-        :all-matching-resource-count="total"
-        resource-count-label=""
-        :per-page="perPage"
-        :page="currentPage"
-        :pages="pages"
-        @load-more="loadMore"
-    ></pagination-load-more>-->
 
 
   </div>
