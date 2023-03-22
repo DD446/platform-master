@@ -35,9 +35,7 @@
       <!--Informationen, die in einer zweidimensionalen Tabelle dargestellt werden, die aus Zeilen und Spalten von Zellen besteht, die Daten enthalten-->
       <thead><!--definiert eine Reihe von Zeilen, die den Kopf der Spalten der Tabelle definieren-->
       <tr><!--definiert eine Reihe von Zellen in einer Tabelle-->
-<!--        <th>
-          Logo
-        </th>-->
+
         <th>
           Username
         </th>
@@ -54,9 +52,9 @@
       </thead>
       <tbody>
       <tr v-for="(user, usr_id) in users" :key="usr_id"><!--Schleifendurchlauf der Benutzer nach ID-->
-<!--        <td class="text-center">{{ user.identifier }}</td>--><!--definiert eine Zelle einer Tabelle, die Daten enthält-->
 
-        <td class="text-center">{{ user.username }}</td>
+
+        <td class="text-center">{{ user.username }}</td> <!--definiert eine Zelle einer Tabelle, die Daten enthält-->
         <td class="text-center">{{ user.newestEntry.title }}</td>
         <td class="text-center"><a :href="user.podcastLink" v-show="user.feedTitle" target="_blank">{{ user.feedLink }}</a></td>
         <td class="text-center">
