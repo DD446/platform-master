@@ -100,8 +100,6 @@ export default {
       currentPage: 1,
       initialLoading: false,
       volume: 1,
-      perPage: 10,
-      total: 0,
       newestEntry: null
     }
   },
