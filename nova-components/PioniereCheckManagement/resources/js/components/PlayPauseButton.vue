@@ -6,7 +6,6 @@
     <button  @click="pause" v-if="playback === 'playing'">
       <img v-bind:src="imageSrcPause" alt="Pause">
     </button>
-<!--    <button :class="playState" @click="changeState"></button>-->
   </div>
 </template>
 
