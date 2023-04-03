@@ -32,7 +32,8 @@
         cellpadding="0"
         cellspacing="0"
         class="table w-full bg-white mt-8">
-      <!--Informationen, die in einer zweidimensionalen Tabelle dargestellt werden, die aus Zeilen und Spalten von Zellen besteht, die Daten enthalten-->
+      <!--Informationen, die in einer zweidimensionalen Tabelle dargestellt werden, 
+       die aus Zeilen und Spalten von Zellen besteht, die Daten enthalten-->
       <thead><!--definiert eine Reihe von Zeilen, die den Kopf der Spalten der Tabelle definieren-->
       <tr><!--definiert eine Reihe von Zellen in einer Tabelle-->
 
