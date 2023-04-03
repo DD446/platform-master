@@ -57,7 +57,9 @@
 
         <td class="text-center">{{ user.username }}</td> <!--definiert eine Zelle einer Tabelle, die Daten enthält-->
         <td class="text-center">{{ user.newestEntry.title }}</td>
-        <td class="text-center"><a :href="user.podcastLink" v-show="user.feedTitle" target="_blank">{{ user.feedLink }}</a></td>
+        <td class="text-center"><a :href="user.podcastLink" v-show="user.feedTitle" target="_blank">
+                                  {{ user.feedLink }}
+                                </a></td>
         <td class="text-center">
           <play-pause-button
               :url="url"
